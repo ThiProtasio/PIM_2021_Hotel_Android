@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="733dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="733dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textview4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/open_sans_extra_bold"
+        android:text="SILVER PARK HOTEL"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@id/textview3"
+        app:layout_constraintTop_toTopOf="@id/textview3" />
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/open_sans_light"
+        android:text="Hotel"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/textview"
+        app:layout_constraintTop_toTopOf="@+id/primeirotexto" />
+
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/open_sans_light"
+        android:text="é o"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/primeirotexto" />
+
+    <TextView
+        android:id="@+id/primeirotexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/open_sans_light"
+        android:text="O"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:fontFamily="@font/open_sans_extra_bold"
+        android:text="MELHOR"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/primeirotexto"
+        app:layout_constraintTop_toTopOf="@+id/primeirotexto" />
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="81dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/silverpark"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/boas_vindas"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_search_view"
+        android:elevation="20dp"
+        android:text="SEJA MUITO BEM-VINDO"
+        android:fontFamily="@font/open_sans_extra_bold"
+        android:gravity="center"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/textview3"
+        tools:targetApi="lollipop"/>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline2"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/boas_vindas"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="226dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/quarto_simples"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"/>
+
+                    <TextView
+                        android:id="@+id/textview5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/open_sans_extra_bold"
+                        android:text="Quarto Simples"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RatingBar
+                        android:id="@+id/ratingbar"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="144dp"
+                        android:max="5"
+                        android:numStars="5"
+                        android:progressTint="#FFFF00"
+                        android:rating="3"
+                        android:stepSize="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textview5" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview2"
+                android:layout_width="match_parent"
+                android:layout_height="226dp"
+                android:layout_marginTop="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/quarto_solteiro"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"/>
+
+                    <TextView
+                        android:id="@+id/textview8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/open_sans_extra_bold"
+                        android:text="Quarto de Solteiro"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RatingBar
+                        android:id="@+id/ratingbar2"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="144dp"
+                        android:max="5"
+                        android:numStars="5"
+                        android:progressTint="#FFFF00"
+                        android:rating="3"
+                        android:stepSize="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textview8" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview3"
+                android:layout_width="match_parent"
+                android:layout_height="226dp"
+                android:layout_marginTop="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:id="@+id/view3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/quarto_luxo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"/>
+
+                    <TextView
+                        android:id="@+id/textview9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/open_sans_extra_bold"
+                        android:text="Quarto de Luxo"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RatingBar
+                        android:id="@+id/ratingbar3"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="144dp"
+                        android:max="5"
+                        android:numStars="5"
+                        android:progressTint="#FFFF00"
+                        android:rating="4"
+                        android:stepSize="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textview9" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview4"
+                android:layout_width="match_parent"
+                android:layout_height="226dp"
+                android:layout_marginTop="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:id="@+id/view4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/quarto_luxopresidencial"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"/>
+
+                    <TextView
+                        android:id="@+id/textview10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/open_sans_extra_bold"
+                        android:text="Quarto de Luxo Presidencial"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RatingBar
+                        android:id="@+id/ratingbar4"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="144dp"
+                        android:max="5"
+                        android:numStars="5"
+                        android:progressTint="#FFFF00"
+                        android:rating="5"
+                        android:stepSize="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textview10" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

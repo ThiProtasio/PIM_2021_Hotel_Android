@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity2"
+    android:background="@drawable/quarto_solteiro"
+    android:transitionName="quarto_solteiro_transition"
+    tools:targetApi="LOLLIPOP">
+
+    <ImageView
+        android:id="@+id/second_back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="356dp"
+        android:layout_marginRight="356dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_back_arrow"/>
+
+    <TextView
+        android:id="@+id/segundo_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="420dp"
+        android:fontFamily="@font/open_sans_extra_bold"
+        android:background="@color/white"
+        android:text="Quarto de Solteiro"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/segundo_subtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:fontFamily="@font/open_sans_extra_bold"
+        android:background="@color/white"
+        android:text="Nossos quartos de solteiro são ideais para quem procura uma opção mais acessível apenas para 1 pessoa, por apenas R$60/Noite"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/segundo_titulo"
+        app:layout_constraintTop_toBottomOf="@+id/segundo_titulo"/>
+
+    <RatingBar
+        android:id="@+id/second_ratingbar"
+        style="?android:ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="24dp"
+        android:max="5"
+        android:numStars="5"
+        android:progressTint="#FFFF00"
+        android:rating="3"
+        android:stepSize="0.5"
+        app:layout_constraintStart_toStartOf="@+id/segundo_subtitulo"
+        app:layout_constraintTop_toBottomOf="@+id/segundo_subtitulo"
+        tools:targetApi="lollipop" />
+
+    <ImageView
+        android:id="@+id/second_arrow_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="196dp"
+        android:src="@drawable/ic_up_arrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/second_ratingbar" />
+
+    <TextView
+        android:id="@+id/mais_detalhes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/open_sans_extra_bold"
+        android:background="@color/white"
+        android:text="Mais Detalhes"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/second_arrow_up"
+        app:layout_constraintVertical_bias="0.239" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
